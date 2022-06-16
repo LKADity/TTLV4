@@ -47,7 +47,7 @@ $item = array(
 </head>
 <body>
 
-	<nav id="navigationBar" class="navbar navbar-expand-lg bg-dark bg-opacity-25 fixed-top">
+	<nav id="navigationBar" class="navbar navbar-expand-lg bg-dark bg-opacity-75 fixed-top">
 		<div class="container-fluid m-3">
 		    <a class="navbar-brand text-light fw-bold" href="#">Panto</a>	    
 		    
@@ -63,7 +63,7 @@ $item = array(
 		            	<a class="nav-link dropdown-toggle text-light" href="#" id="furniture" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 		            		Furniture
 		            	</a>
-		            	<ul class="dropdown-menu bg-dark bg-opacity-10" aria-labelledby="furniture">
+		            	<ul class="dropdown-menu bg-dark" aria-labelledby="furniture">
 			                <li><a class="dropdown-item text-light text-opacity-75" href="#">Chair</a></li>
 			                <li><a class="dropdown-item text-light text-opacity-75" href="#">Beds</a></li>
 			                <li><a class="dropdown-item text-light text-opacity-75" href="#">Sofa</a></li>
@@ -83,16 +83,26 @@ $item = array(
 			        <li class="nav-item ms-3 me-3">
 			          <a class="nav-link text-light">Contact</a>
 			        </li>
-			    <!-- The Difficult Icon to manage -->
-			    <ul class="navbar-nav">
-			        <li class="nav-item">
-					    <img class="" src="assets/icon/00-cart-01.png" alt="00-cart-01">
-			        </li>
-			    </ul>
-		    	</ul>
+	                <li><hr class="dropdown-divider"></li>
+	                <!-- The Search Box Moved to Navbar in SP Display -->
+	                <li class="nav-item border border-light rounded-pill d-block d-md-none ms-2 me-3">
+		    			<form class="d-flex " role="search">
+		    			    <input class="form-control bg-transparent border-0 text-light" type="search" placeholder="Search" aria-label="Search">
+		    			    <button class="btn bg-warning rounded-circle" type="submit">
+		    			    	<img src="assets\icon\search.svg" class="img-fluid rounded-circle">
+		    			    </button>
+					    </form>
+	                </li>
+				</ul>
 		    </div>
 		</div>
+	    <!-- The Difficult Icon to manage -->
+		<div class="container-fluid position-absolute d-none d-lg-block" style="left: 95%;">
+		    <img class="" src="assets/icon/00-cart-01.png" alt="00-cart-01">
+		</div>
 	</nav>
+
+	
 
 	<!-- Section Break Point -->
 
@@ -107,24 +117,46 @@ $item = array(
 		<div class="carousel-inner">
 		    <div class="carousel-item active">
 			    <img src="assets/picture/01_TopBanner_01.png" class="d-block w-100" alt="01_TopBanner_01">
-			    <div class="carousel-caption d-none d-md-block">
-			        <h5>First slide label</h5>
-			        <p>Some representative placeholder content for the first slide.</p>
-			    </div>
 			</div>
 			<div class="carousel-item">
 			    <img src="assets/picture/01_TopBanner_01 - Copy.png" class="d-block w-100" alt="...">
-			    <div class="carousel-caption d-none d-md-block">
-			        <h5>Second slide label</h5>
-			        <p>Some representative placeholder content for the second slide.</p>
-			    </div>
 			</div>
 			<div class="carousel-item">
 			    <img src="assets/picture/Rectangle 1450 (1).png" class="d-block w-100" alt="Rectangle 1450 (1)">
-			    <div class="carousel-caption d-none d-md-block">
-			        <h5>Third slide label</h5>
-			        <p>Some representative placeholder content for the third slide.</p>
-			    </div>
+		    </div>
+		    <div class="container-fluid position-absolute d-none d-md-block" style="top: 10%">
+		    	<div class="row row-cols-3">
+		    		<div class="col-sm-2"></div>
+		    		<div class="col-sm-8">
+		    			<p class="fw-bold text-light text-center" style="font-size: 60px;">Make Your Interior More Minimalistic & Modern</p>
+		    		</div>
+		    		<div class="col-sm-2"></div>
+		    		<div class="col-sm-3"></div>
+		    		<div class="col col-sm-6">
+		    			<p class="fs-5 text-light text-opacity-75 text-center">Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
+		    		</div>
+		    		<div class="col-sm-3"></div>
+		    		<div class="col-sm-4 me-5"></div>
+		    		<div class="col-sm-3 border border-light bg-secondary bg-opacity-50 rounded-pill">
+		    			<form class="d-flex " role="search">
+		    			    <input class="form-control bg-transparent border-0 text-light" type="search" placeholder="Search" aria-label="Search">
+		    			    <button class="btn bg-warning rounded-circle" type="submit">
+		    			    	<img src="assets\icon\search.svg" class="img-fluid rounded-circle">
+		    			    </button>
+	    			    </form>
+		    		</div>
+		    		<div class="col-sm-4"></div>
+		    	</div>
+		    </div>
+		    <div class="container-fluid position-absolute d-block d-md-none" style="top: 25%">
+		    	<div class="row row-cols-1">
+		    		<div class="col ps-3 pe-3">
+		    			<h5 class="text-light text-center text-break">Make Your Interior More Minimalistic & Modern</h5>
+		    		</div>
+		    		<div class="col-sm-6 ps-5 pe-5">
+		    			<p class="text-secondary text-center text-break" style="font-size: 10px;">Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
+		    		</div>
+		    	</div>
 		    </div>
 		</div>
 
@@ -346,5 +378,11 @@ $item = array(
 	<!-- Section Break Point -->
 
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<style type="text/css">
+		.form-control::placeholder {
+		  color: white;
+		  opacity: 1;
+		}
+	</style>
 </body>
 </html>
