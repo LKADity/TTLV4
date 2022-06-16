@@ -29,6 +29,26 @@ $item = array(
 		'price' => 921
 	)
 );
+$testimoni = array(
+	array(
+		'name' => "Bang Upin", 
+		'job' => "Pedangan Asongan",
+		'star' => 8,
+		'quote' => "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal"
+	), 
+	array(
+		'name' => "Ibuk Sukijan", 
+		'job' => "Ibu Rumah Tangga",
+		'star' => 10,
+		'quote' => "Makasih Panto, aku sekarang berasa tinggal di apartement karena barang-barang yang terlihat mewah"
+	), 
+	array(
+		'name' => "Mpok Ina", 
+		'job' => "Karyawan Swasta",
+		'star' => 9,
+		'quote' => "Sangat terjangkau untuk kantong saya yang tidak terlalu banyak"
+	)
+);
 
 // var_dump($item)
  ?>
@@ -42,11 +62,9 @@ $item = array(
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<title>Technical Test</title>
 	
-	<!-- Section Break Point -->
-
 </head>
 <body>
-
+	<!-- Navigation Bar -->
 	<nav id="navigationBar" class="navbar navbar-expand-lg bg-dark bg-opacity-75 fixed-top">
 		<div class="container-fluid m-3">
 		    <a class="navbar-brand text-light fw-bold" href="#">Panto</a>	    
@@ -102,10 +120,9 @@ $item = array(
 		</div>
 	</nav>
 
-	
+	<!-- Something Under Construction Here -->
 
-	<!-- Section Break Point -->
-
+	<!-- Main Banner Section -->
 	<div id="mainBanner" class="carousel slide mb-5" data-bs-ride="false">
 		<div class="carousel-indicators">
 		    <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -119,12 +136,14 @@ $item = array(
 			    <img src="assets/picture/01_TopBanner_01.png" class="d-block w-100" alt="01_TopBanner_01">
 			</div>
 			<div class="carousel-item">
-			    <img src="assets/picture/01_TopBanner_01 - Copy.png" class="d-block w-100" alt="...">
+			    <img src="assets/picture/01_TopBanner_02.png" class="d-block w-100" alt="...">
 			</div>
 			<div class="carousel-item">
-			    <img src="assets/picture/Rectangle 1450 (1).png" class="d-block w-100" alt="Rectangle 1450 (1)">
+			    <img src="assets/picture/01_TopBanner_03.png" class="d-block w-100" alt="Rectangle 1450 (1)">
 		    </div>
-		    <div class="container-fluid position-absolute d-none d-md-block" style="top: 10%">
+
+		    <!-- PC Display Container -->
+		    <div class="container-fluid position-absolute d-none d-lg-block" style="top: 10%">
 		    	<div class="row row-cols-3">
 		    		<div class="col-sm-2"></div>
 		    		<div class="col-sm-8">
@@ -148,7 +167,9 @@ $item = array(
 		    		<div class="col-sm-4"></div>
 		    	</div>
 		    </div>
-		    <div class="container-fluid position-absolute d-block d-md-none" style="top: 25%">
+
+		    <!-- SP Display Container -->
+		    <div class="container-fluid position-absolute d-block d-lg-none" style="top: 25%">
 		    	<div class="row row-cols-1">
 		    		<div class="col ps-3 pe-3">
 		    			<h5 class="text-light text-center text-break">Make Your Interior More Minimalistic & Modern</h5>
@@ -171,8 +192,7 @@ $item = array(
 		</button>
 	</div>
 	
-	<!-- Section Break Point -->
-
+	<!-- Benefit Section -->
 	<div id="benefit" class="container-fluid bg-body mt-5 mb-5">
 		<div class="row">
 			<div class="col-sm pt-5 pb-1">
@@ -198,14 +218,35 @@ $item = array(
 		</div>
 	</div>
 
-	<!-- Section Break Point -->
-
-	<div id="productDisplayFilter" class="container-fluid mt-5 mb-5">
-		
+	<!-- Product Display Section -->
+	<div id="productDisplayFilter" class="container-fluid bg-secondary bg-opacity-10 mt-5 pt-5">
+		<div class="row row-cols-1">
+			<div class="col">
+				<h1 class="text-dark text-center">Best Selling Product</h1>
+			</div>
+			<div class="col-sm-4"></div>
+			<div class="col col-sm-4 bg-secondary bg-opacity-25 rounded-pill">
+				<div class="row row-cols-4">
+					<div class="col-sm-3">
+						<button class="btn bg-light rounded-pill w-100 active" id="chairButton">Chair</button>
+					</div>
+					<div class="col-sm-3">
+						<button class="btn rounded-pill w-100" id="bedsButton">Beds</button>
+					</div>
+					<div class="col-sm-3">
+						<button class="btn rounded-pill w-100" id="sofaButton">Sofa</button>
+					</div>
+					<div class="col-sm-3">
+						<button class="btn rounded-pill w-100" id="lampButton">Lamp</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
 	</div>
 
-	<div id="productDisplayPCBox" class="container-fluid d-none d-md-block mt-5 mb-5 p-5">
-		<div id="productDisplayPC" class="carousel slide bg-secondary bg-opacity-10" data-bs-ride="carousel">
+	<div id="productDisplayPCBox" class="container-fluid bg-secondary bg-opacity-10 d-none d-md-block mb-5 p-5">
+		<div id="productDisplayPC" class="carousel slide" data-bs-ride="carousel">
 			<!-- Multiple Item Display per Slide -->
 			<div class="carousel-inner">
 
@@ -289,7 +330,7 @@ $item = array(
 		</div>
 	</div>
 	
-	<div id="productDisplaySPBox" class="container-sm col-sm-12 d-block d-md-none mt-5 mb-5 p-5">
+	<div id="productDisplaySPBox" class="container-sm  bg-secondary bg-opacity-10 col-sm-12 d-block d-md-none mb-5 p-5">
 		<div id="productDisplaySP" class="carousel slide bg-secondary bg-opacity-10" data-bs-ride="carousel">
 			<div class="carousel-inner">
 			    <!-- SP Display Item 1 -->
@@ -365,14 +406,223 @@ $item = array(
 		</div>
 	</div>
 
-	<div class="container-fluid">
-		
+	<!-- Explanation Section -->
+	<div id="explainationPC" class="container-fluid bg-body mt-5 mb-5">
+		<div class="row">
+			<div class="col-sm-6 pt-5">
+				<img src="assets\picture\04a_Showcase_00.png" class="img-fluid rounded float-left">
+			</div>
+			<div class="col-sm-6 pt-5">
+				<h4 class="mb-3">Luxury facilities</h4>
+				<p>You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
+				<a class="text-danger" href="#">More Info =></a>
+			</div>
+			<div class="col-sm-6 pt-5">
+				<h4 class="mb-3">Affordable Price</h4>
+				<p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+				<a class="text-danger" href="#">More Info =></a>
+			</div>
+			<div class="col-sm-6 pt-5">
+				<img src="assets\picture\04b_Showcase_00.png" class="img-fluid rounded float-right">
+			</div>
+		</div>
 	</div>
 
-	<!-- Section Break Point -->
+	<!-- Testimoni Display Section -->
+	<div id="testimonialDisplayPCBox" class="container-fluid bg-secondary bg-opacity-10 d-none d-md-block mb-5 p-5">
+		<div id="testimonialDisplayPC" class="carousel slide" data-bs-ride="carousel">
+			<!-- Multiple Item Display per Slide -->
+			<div class="carousel-inner">
 
-	<div>
-		
+			    <!-- PC Display Item set 1 -->
+			    <div class="carousel-item active">
+			    	<div class="row">
+			    		<div class="col">
+					    	<div class="card bg-transparent text-center rounded-4 mt-3 mb-3 ms-3">
+						    	<img src="assets\picture\05_BottomCarousel_01.png" class="img-fluid rounded-4" alt="05_BottomCarousel_01">
+						    	<div class="card-body bg-light position-absolute bottom-0 rounded-4 m-3">
+							    	<div class="row row-cols-1">
+						    			<div class="col">
+									    	<p class="card-text fs-5 fw-bold text-black mt-2"><?php echo $testimoni[0]['name']; ?></p>
+						    			</div>
+						    			<div class="col">
+									    	<p class="card-text text-muted mb-3"><?php echo $testimoni[0]['job']; ?></p>
+						    			</div>
+						    			<div class="col">
+									    	<p class="card-text text-break ps-3 pe-3"><?php echo $testimoni[0]['quote']; ?></p>
+						    			</div>
+						    			<div class="col">
+									    	<img src="assets\icon\Star\8.png" class="img-fluid w-25">
+						    			</div>
+						    		</div>
+						    	</div>
+						    	<div class="container-fluid position-absolute" style="top: 44%;">
+							    	<img src="assets/picture/05_BottomCarousel_01b.png" class="img-fluid border border-5 border-light rounded-circle">
+						    	</div>
+					    	</div>
+			    		</div>
+			    		<div class="col">
+					    	<div class="card bg-transparent text-center rounded-4 mt-3 mb-3 ms-3">
+						    	<img src="assets\picture\05_BottomCarousel_02.png" class="img-fluid rounded-4" alt="05_BottomCarousel_01">
+						    	<div class="card-body bg-light position-absolute bottom-0 rounded-4 m-3">
+						    		<div class="row row-cols-1">
+						    			<div class="col">
+									    	<p class="card-text fs-5 fw-bold text-black mt-2"><?php echo $testimoni[1]['name']; ?></p>
+						    			</div>
+						    			<div class="col">
+									    	<p class="card-text text-muted mb-3"><?php echo $testimoni[1]['job']; ?></p>
+						    			</div>
+						    			<div class="col">
+									    	<p class="card-text text-break ps-3 pe-3"><?php echo $testimoni[1]['quote']; ?></p>
+						    			</div>
+						    			<div class="col">
+									    	<img src="assets\icon\Star\10.png" class="img-fluid w-25">
+						    			</div>
+						    		</div>
+						    	</div>
+						    	<div class="container-fluid position-absolute" style="top: 44%;">
+							    	<img src="assets/picture/05_BottomCarousel_02b.png" class="img-fluid border border-5 border-light rounded-circle">
+						    	</div>
+					    	</div>
+			    		</div>
+			    		<div class="col">
+					    	<div class="card bg-transparent text-center rounded-4 mt-3 mb-3 ms-3">
+						    	<img src="assets\picture\05_BottomCarousel_03.png" class="img-fluid rounded-4" alt="05_BottomCarousel_01">
+						    	<div class="card-body bg-light position-absolute bottom-0 rounded-4 m-3">
+							    	<div class="row row-cols-1">
+						    			<div class="col">
+									    	<p class="card-text fs-5 fw-bold text-black mt-2"><?php echo $testimoni[2]['name']; ?></p>
+						    			</div>
+						    			<div class="col">
+									    	<p class="card-text text-muted mb-3"><?php echo $testimoni[2]['job']; ?></p>
+						    			</div>
+						    			<div class="col">
+									    	<p class="card-text text-break ps-3 pe-3"><?php echo $testimoni[2]['quote']; ?></p>
+						    			</div>
+						    			<div class="col">
+									    	<img src="assets\icon\Star\9.png" class="img-fluid w-25">
+						    			</div>
+						    		</div>
+						    	</div>
+						    	<div class="container-fluid position-absolute" style="top: 50%;">
+							    	<img src="assets/picture/05_BottomCarousel_03b.png" class="img-fluid border border-5 border-light rounded-circle">
+						    	</div>
+					    	</div>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+			<!-- Caroussel Control -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#testimonialDisplayPC" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon bg-dark bg-opacity-25" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#testimonialDisplayPC" data-bs-slide="next">
+			    <span class="carousel-control-next-icon bg-dark bg-opacity-25" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<div class="d-flex flex-row p-5">
+			<div class="col">
+				<a class="text-danger text-center" href="#">View All =></a>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="testimonialDisplaySPBox" class="container-fluid bg-secondary bg-opacity-10 d-block d-md-none mb-5 p-5">
+		<div id="testimonialDisplaySP" class="carousel slide" data-bs-ride="carousel">
+			<!-- Multiple Item Display per Slide -->
+			<div class="carousel-inner">
+
+			    <!-- SP Display Item 1 -->
+			    <div class="carousel-item active">
+			    	<div class="card bg-transparent text-center rounded-4 mt-3 mb-3 ms-3">
+				    	<img src="assets\picture\05_BottomCarousel_01.png" class="img-fluid rounded-4" alt="05_BottomCarousel_01">
+				    	<div class="card-body bg-light position-absolute bottom-0 rounded-4 m-3">
+					    	<div class="row row-cols-1">
+				    			<div class="col">
+							    	<p class="card-text fs-5 fw-bold text-black mt-2"><?php echo $testimoni[0]['name']; ?></p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-muted mb-3"><?php echo $testimoni[0]['job']; ?></p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-break ps-3 pe-3"><?php echo $testimoni[0]['quote']; ?></p>
+				    			</div>
+				    			<div class="col">
+							    	<img src="assets\icon\Star\8.png" class="img-fluid w-25">
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="container-fluid position-absolute" style="top: 32%;">
+					    	<img src="assets/picture/05_BottomCarousel_01b.png" class="img-fluid border border-5 border-light rounded-circle">
+				    	</div>
+			    	</div>
+	    		</div>
+			    
+			    <!-- SP Display Item 2 -->
+			    <div class="carousel-item">
+			    	<div class="card bg-transparent text-center rounded-4 mt-3 mb-3 ms-3">
+				    	<img src="assets\picture\05_BottomCarousel_02.png" class="img-fluid rounded-4" alt="05_BottomCarousel_01">
+				    	<div class="card-body bg-light position-absolute bottom-0 rounded-4 m-3">
+				    		<div class="row row-cols-1">
+				    			<div class="col">
+							    	<p class="card-text fs-5 fw-bold text-black mt-2"><?php echo $testimoni[1]['name']; ?></p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-muted mb-3"><?php echo $testimoni[1]['job']; ?></p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-break ps-3 pe-3"><?php echo $testimoni[1]['quote']; ?></p>
+				    			</div>
+				    			<div class="col">
+							    	<img src="assets\icon\Star\10.png" class="img-fluid w-25">
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="container-fluid position-absolute" style="top: 25%;">
+					    	<img src="assets/picture/05_BottomCarousel_02b.png" class="img-fluid border border-5 border-light rounded-circle">
+				    	</div>
+			    	</div>
+	    		</div>
+			    
+			    <!-- SP Display Item 2 -->
+			    <div class="carousel-item">
+			    	<div class="card bg-transparent text-center rounded-4 mt-3 mb-3 ms-3">
+				    	<img src="assets\picture\05_BottomCarousel_03.png" class="img-fluid rounded-4" alt="05_BottomCarousel_01">
+				    	<div class="card-body bg-light position-absolute bottom-0 rounded-4 m-3">
+					    	<div class="row row-cols-1">
+				    			<div class="col">
+							    	<p class="card-text fs-5 fw-bold text-black mt-2"><?php echo $testimoni[2]['name']; ?></p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-muted mb-3"><?php echo $testimoni[2]['job']; ?></p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-break ps-3 pe-3"><?php echo $testimoni[2]['quote']; ?></p>
+				    			</div>
+				    			<div class="col">
+							    	<img src="assets\icon\Star\9.png" class="img-fluid w-25">
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="container-fluid position-absolute" style="top: 32%;">
+					    	<img src="assets/picture/05_BottomCarousel_03b.png" class="img-fluid border border-5 border-light rounded-circle">
+				    	</div>
+			    	</div>
+			    </div>
+			</div>
+			<!-- Caroussel Control -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#testimonialDisplaySP" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon bg-dark bg-opacity-25" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#testimonialDisplaySP" data-bs-slide="next">
+			    <span class="carousel-control-next-icon bg-dark bg-opacity-25" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			</button>
+		</div>
 	</div>
 
 	<!-- Section Break Point -->
