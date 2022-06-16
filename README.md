@@ -7,3 +7,6 @@ Detail:
 
 Requirement:
 	Only using HTML, CSS (Bootstrap allowed), JavaScript/jQuery
+
+By:
+	Muhamad Agung Aditya

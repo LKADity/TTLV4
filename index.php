@@ -1,6 +1,4 @@
 <?php 
-$random_number = 5;
-$random_word = "Why Choosing Us";
 $item_number = 4;
 // array of product display
 $item = array(
@@ -58,9 +56,9 @@ $testimoni = array(
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="last-modified" content="15/06/2022">
+	<meta name="last-modified" content="17/06/2022">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<title>Technical Test</title>
+	<title>Technical Test LV4</title>
 	
 </head>
 <body>
@@ -136,10 +134,10 @@ $testimoni = array(
 			    <img src="assets/picture/01_TopBanner_01.png" class="d-block w-100" alt="01_TopBanner_01">
 			</div>
 			<div class="carousel-item">
-			    <img src="assets/picture/01_TopBanner_02.png" class="d-block w-100" alt="...">
+			    <img src="assets/picture/01_TopBanner_02.png" class="d-block w-100" alt="01_TopBanner_02">
 			</div>
 			<div class="carousel-item">
-			    <img src="assets/picture/01_TopBanner_03.png" class="d-block w-100" alt="Rectangle 1450 (1)">
+			    <img src="assets/picture/01_TopBanner_03.png" class="d-block w-100" alt="01_TopBanner_03">
 		    </div>
 
 		    <!-- PC Display Container -->
@@ -196,9 +194,7 @@ $testimoni = array(
 	<div id="benefit" class="container-fluid bg-body mt-5 mb-5">
 		<div class="row">
 			<div class="col-sm pt-5 pb-1">
-				<h2 href="fw-bold text-start">
-					<?php echo $random_word ; ?>
-				</h2>
+				<h2 href="fw-bold text-start">Why Choosing Us</h2>
 			</div>
 			<div class="col-sm pt-5 pb-1">
 				<h4 class="mb-3">Luxury facilities</h4>
