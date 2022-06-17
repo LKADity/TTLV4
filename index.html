@@ -168,19 +168,23 @@
 				<h1 class="text-dark text-center">Best Selling Product</h1>
 			</div>
 			<div class="col-sm-4"></div>
-			<div class="col col-sm-4 bg-secondary bg-opacity-25 rounded-pill">
+			<div class="col col-sm-4 bg-secondary bg-opacity-25 rounded-pill p-0">
 				<div class="row row-cols-4">
 					<div class="col-sm-3">
-						<button class="btn bg-light rounded-pill w-100 active" id="chairButton">Chair</button>
+						<label class="btn rounded-pill w-100" for="option1">Chair</label>
+						<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
 					</div>
 					<div class="col-sm-3">
-						<button class="btn rounded-pill w-100" id="bedsButton">Beds</button>
+						<label class="btn rounded-pill w-100" for="option2">Beds</label>
+						<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
 					</div>
 					<div class="col-sm-3">
-						<button class="btn rounded-pill w-100" id="sofaButton">Sofa</button>
+						<label class="btn rounded-pill w-100" for="option3">Sofa</label>
+						<input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
 					</div>
 					<div class="col-sm-3">
-						<button class="btn rounded-pill w-100" id="lampButton">Lamp</button>
+						<label class="btn rounded-pill w-100" for="option4">Lamp</label>
+						<input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
 					</div>
 				</div>
 			</div>
@@ -373,21 +377,21 @@
 
 	<div id="explainationSP" class="container-fluid bg-body d-block d-md-none mt-5 mb-5">
 		<div class="row row-cols-1">
-			<div class="col-sm-6 pt-5">
-				<div class="container-fluid bg-light bg-opacity-75 position-absolute">
+			<div class="col-sm-6 pt-5 pb-5">
+				<div class="container-fluid bg-light bg-opacity-50 position-absolute" style="margin-top: 230px;">
 					<h4 class="mb-3">Luxury facilities</h4>
-					<p>You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
+					<p>You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are only here.</p>
 					<a class="text-warning" href="#">More Info =></a>
 				</div>
-				<img src="assets\picture\04a_Showcase_00.png" class="img-fluid rounded float-left">
+				<img src="assets\picture\04a_Showcase_00.png" class="img-fluid rounded">
 			</div>
-			<div class="col-sm-6 pt-5">
-				<img src="assets\picture\04b_Showcase_00.png" class="img-fluid rounded float-right">
-				<div class="container-fluid position-absolute">
+			<div class="col-sm-6 pt-5 pb-5">
+				<div class="container-fluid bg-light bg-opacity-50 position-absolute" style="margin-top: 230px;">
 					<h4 class="mb-3">Affordable Price</h4>
 					<p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
 					<a class="text-warning" href="#">More Info =></a>
 				</div>
+				<img src="assets\picture\04b_Showcase_00.png" class="img-fluid rounded">
 			</div>
 		</div>
 	</div>
@@ -837,6 +841,10 @@
 		.form-control::placeholder {
 		  color: white;
 		  opacity: 1;
+		}
+
+		.btn:checked {
+			background-color: white;
 		}
 	</style>
 </body>
