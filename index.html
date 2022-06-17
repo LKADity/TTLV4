@@ -10,8 +10,8 @@
 </head>
 <body>
 	<!-- Navigation Bar -->
-	<nav id="navigationBar" class="navbar navbar-expand-lg bg-dark bg-opacity-75 fixed-top">
-		<div class="container-fluid m-3">
+	<nav id="navigationBar" class="navbar navbar-expand-md bg-dark bg-opacity-75 fixed-top">
+		<div class="container-fluid ms-3 me-3 mt-2">
 		    <a class="navbar-brand text-light fw-bold" href="#">Panto</a>	    
 		    
 		    <!-- Hamburger Menu Enabler in SP Display -->
@@ -146,17 +146,17 @@
 			<div class="col-sm pt-5 pb-1">
 				<h4 class="mb-3">Luxury facilities</h4>
 				<p>You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
-				<a class="text-danger" href="#">More Info =></a>
+				<a class="text-warning" href="#">More Info =></a>
 			</div>
 			<div class="col-sm pt-5 pb-1">
 				<h4 class="mb-3">Affordable Price</h4>
 				<p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
-				<a class="text-danger" href="#">More Info =></a>
+				<a class="text-warning" href="#">More Info =></a>
 			</div>
 			<div class="col-sm pt-5 pb-1">
 				<h4 class="mb-3">Many Choices</h4>
 				<p>We provide many unique work space choices so that you can choose the workspace to your liking.</p>
-				<a class="text-danger" href="#">More Info =></a>
+				<a class="text-warning" href="#">More Info =></a>
 			</div>
 		</div>
 	</div>
@@ -267,7 +267,7 @@
 		</div>
 		<div class="d-flex flex-row p-5">
 			<div class="col">
-				<a class="text-danger text-center" href="#">View All =></a>
+				<a class="text-warning text-center" href="#">View All =></a>
 			</div>
 			
 		</div>
@@ -350,7 +350,7 @@
 	</div>
 
 	<!-- Explanation Section -->
-	<div id="explainationPC" class="container-fluid bg-body mt-5 mb-5">
+	<div id="explainationPC" class="container-fluid bg-body d-none d-md-block mt-5 mb-5">
 		<div class="row">
 			<div class="col-sm-6 pt-5">
 				<img src="assets\picture\04a_Showcase_00.png" class="img-fluid rounded float-left">
@@ -358,12 +358,12 @@
 			<div class="col-sm-6 pt-5">
 				<h4 class="mb-3">Luxury facilities</h4>
 				<p>You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
-				<a class="text-danger" href="#">More Info =></a>
+				<a class="text-warning" href="#">More Info =></a>
 			</div>
 			<div class="col-sm-6 pt-5">
 				<h4 class="mb-3">Affordable Price</h4>
 				<p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
-				<a class="text-danger" href="#">More Info =></a>
+				<a class="text-warning" href="#">More Info =></a>
 			</div>
 			<div class="col-sm-6 pt-5">
 				<img src="assets\picture\04b_Showcase_00.png" class="img-fluid rounded float-right">
@@ -371,8 +371,40 @@
 		</div>
 	</div>
 
+	<div id="explainationSP" class="container-fluid bg-body d-block d-md-none mt-5 mb-5">
+		<div class="row row-cols-1">
+			<div class="col-sm-6 pt-5">
+				<div class="container-fluid bg-light bg-opacity-75 position-absolute">
+					<h4 class="mb-3">Luxury facilities</h4>
+					<p>You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
+					<a class="text-warning" href="#">More Info =></a>
+				</div>
+				<img src="assets\picture\04a_Showcase_00.png" class="img-fluid rounded float-left">
+			</div>
+			<div class="col-sm-6 pt-5">
+				<img src="assets\picture\04b_Showcase_00.png" class="img-fluid rounded float-right">
+				<div class="container-fluid position-absolute">
+					<h4 class="mb-3">Affordable Price</h4>
+					<p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+					<a class="text-warning" href="#">More Info =></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Testimoni Display Section -->
-	<div id="testimonialDisplayPCBox" class="container-fluid bg-secondary bg-opacity-10 d-none d-md-block mb-5 p-5">
+	<div class="container-md mt-5 p-5 ">
+		<div class="row row-cols-1">
+			<div class="col text-warning text-center">
+				<h4>Testimonials</h4>
+			</div>
+			<div class="col text-center">
+				<h1 class="fw-bold">Our Client Reviews</h1>
+			</div>
+		</div>
+	</div>
+
+	<div id="testimonialDisplayPCBox" class="container-fluid d-none d-md-block mb-5 p-5">
 		<div id="testimonialDisplayPC" class="carousel slide" data-bs-ride="carousel">
 			<!-- Multiple Item Display per Slide -->
 			<div class="carousel-inner">
@@ -467,13 +499,108 @@
 		</div>
 		<div class="d-flex flex-row p-5">
 			<div class="col">
-				<a class="text-danger text-center" href="#">View All =></a>
+				<a class="text-warning text-center" href="#">View All =></a>
 			</div>
 			
 		</div>
 	</div>
 
-	<div id="testimonialDisplaySPBox" class="container-fluid bg-secondary bg-opacity-10 d-block d-md-none mb-5 p-5">
+	<div id="testimonialDisplayTBBox" class="container-fluid d-none d-sm-block d-md-none mb-5 p-5">
+		<div id="testimonialDisplayTB" class="carousel slide" data-bs-ride="carousel">
+			<!-- Multiple Item Display per Slide -->
+			<div class="carousel-inner">
+
+			    <!-- SP Display Item 1 -->
+			    <div class="carousel-item active">
+			    	<div class="card bg-transparent text-center rounded-4 mt-3 mb-3 ms-3">
+				    	<img src="assets\picture\05_BottomCarousel_01.png" class="img-fluid rounded-4" alt="05_BottomCarousel_01">
+				    	<div class="card-body bg-light position-absolute bottom-0 rounded-4 m-3">
+					    	<div class="row row-cols-1">
+				    			<div class="col">
+							    	<p class="card-text fs-5 fw-bold text-black mt-2">Bang Upin</p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-muted mb-3">Pedangan Asongan</p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-break ps-3 pe-3">Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal</p>
+				    			</div>
+				    			<div class="col">
+							    	<img src="assets\icon\Star\8.png" class="img-fluid w-25">
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="container-fluid position-absolute" style="top: 32%;">
+					    	<img src="assets/picture/05_BottomCarousel_01b.png" class="img-fluid border border-5 border-light rounded-circle">
+				    	</div>
+			    	</div>
+	    		</div>
+			    
+			    <!-- SP Display Item 2 -->
+			    <div class="carousel-item">
+			    	<div class="card bg-transparent text-center rounded-4 mt-3 mb-3 ms-3">
+				    	<img src="assets\picture\05_BottomCarousel_02.png" class="img-fluid rounded-4" alt="05_BottomCarousel_01">
+				    	<div class="card-body bg-light position-absolute bottom-0 rounded-4 m-3">
+				    		<div class="row row-cols-1">
+				    			<div class="col">
+							    	<p class="card-text fs-5 fw-bold text-black mt-2">Ibuk Sukijan</p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-muted mb-3">Ibu Rumah Tangga</p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-break ps-3 pe-3">Makasih Panto, aku sekarang berasa tinggal di apartement karena barang-barang yang terlihat mewah</p>
+				    			</div>
+				    			<div class="col">
+							    	<img src="assets\icon\Star\10.png" class="img-fluid w-25">
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="container-fluid position-absolute" style="top: 25%;">
+					    	<img src="assets/picture/05_BottomCarousel_02b.png" class="img-fluid border border-5 border-light rounded-circle">
+				    	</div>
+			    	</div>
+	    		</div>
+			    
+			    <!-- SP Display Item 2 -->
+			    <div class="carousel-item">
+			    	<div class="card bg-transparent text-center rounded-4 mt-3 mb-3 ms-3">
+				    	<img src="assets\picture\05_BottomCarousel_03.png" class="img-fluid rounded-4" alt="05_BottomCarousel_01">
+				    	<div class="card-body bg-light position-absolute bottom-0 rounded-4 m-3">
+					    	<div class="row row-cols-1">
+				    			<div class="col">
+							    	<p class="card-text fs-5 fw-bold text-black mt-2">Mpok Ina</p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-muted mb-3">Karyawan Swasta</p>
+				    			</div>
+				    			<div class="col">
+							    	<p class="card-text fs-6 text-break ps-3 pe-3">Sangat terjangkau untuk kantong saya yang tidak terlalu banyak</p>
+				    			</div>
+				    			<div class="col">
+							    	<img src="assets\icon\Star\9.png" class="img-fluid w-25">
+				    			</div>
+				    		</div>
+				    	</div>
+				    	<div class="container-fluid position-absolute" style="top: 32%;">
+					    	<img src="assets/picture/05_BottomCarousel_03b.png" class="img-fluid border border-5 border-light rounded-circle">
+				    	</div>
+			    	</div>
+			    </div>
+			</div>
+			<!-- Caroussel Control -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#testimonialDisplayTB" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon bg-dark bg-opacity-25" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#testimonialDisplayTB" data-bs-slide="next">
+			    <span class="carousel-control-next-icon bg-dark bg-opacity-25" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+
+	<div id="testimonialDisplaySPBox" class="container-fluid d-block d-sm-none mb-5 p-5">
 		<div id="testimonialDisplaySP" class="carousel slide" data-bs-ride="carousel">
 			<!-- Multiple Item Display per Slide -->
 			<div class="carousel-inner">
@@ -565,6 +692,141 @@
 			    <span class="carousel-control-next-icon bg-dark bg-opacity-25" aria-hidden="true"></span>
 			    <span class="visually-hidden">Next</span>
 			</button>
+		</div>
+	</div>
+
+	<!-- Section Break Point -->
+
+	<div id="footerPC" class="container-fluid bg-secondary bg-opacity-10 d-none d-md-block mt-5 pt-5">
+		<div class="row">
+			<div class="col col-sm-1"></div>
+			<div class="col col-sm-4">
+				<div class="row">
+					<div class="col">
+						<h3>Panto</h3>
+						<p class="text-break">The Advantage of hiring a workspace with us is that gives you comfortable services and all-round facilities </p>
+					</div>
+				</div>
+			</div>
+			<div class="col col-sm-2">
+				<div class="row row-cols-1">
+					<div class="col text-warning"><p>Services</p></div>
+					<div class="col"><p>Email Marketing</p></div>
+					<div class="col"><p>Campaigns</p></div>
+					<div class="col"><p>Branding</p></div>
+				</div>
+			</div>
+			<div class="col col-sm-2">
+				<div class="row row-cols-1">
+					<div class="col text-warning"><p>Furniture</p></div>
+					<div class="col"><p>Beds</p></div>
+					<div class="col"><p>Chair</p></div>
+					<div class="col"><p>All</p></div>
+				</div>
+			</div>
+			<div class="col col-sm-2">
+				<div class="row row-cols-2">
+					<div class="col text-warning"><p>Follow Us</p></div>
+					<div class="col"></div>
+					<div class="col col-sm-2">
+						<img src="assets/icon/06-footer-facebook.png" class="img-fluid">
+					</div>
+					<div class="col col-sm-10">
+						<p>Facebook</p>
+					</div>
+					<div class="col col-sm-2">
+						<img src="assets/icon/06-footer-twitter.png" class="img-fluid position-absolute">
+					</div>
+					<div class="col col-sm-10">
+						<p>Twitter</p>
+					</div>
+					<div class="col col-sm-2">
+						<img src="assets/icon/06-footer-instagram.png" class="img-fluid position-absolute">
+					</div>
+					<div class="col col-sm-10">
+						<p>Instagram</p>
+					</div>
+				</div>
+			</div>
+			<div class="col col-sm-1"></div>
+		</div>
+		<div class="row pt-5 pb-5">
+			<div class="col col-sm-1"></div>
+			<div class="col col-sm-6">
+				<p>Copyright © 2022</p>
+			</div>
+			<div class="col col-sm-2">
+				<a href="#" class="nav-link text-dark">Terms & Condition</a>
+			</div>
+			<div class="col col-sm-2">
+				<a href="#" class="nav-link text-dark">Privacy Policy</a>
+			</div>
+			<div class="col col-sm-1"></div>
+		</div>
+	</div>
+
+	<div id="footerSP" class="container-fluid bg-secondary bg-opacity-10 d-block d-md-none mt-5 pt-5">
+		<div class="row row-cols-1 ms-1 me-1">
+			<div class="col pb-5">
+				<div class="row">
+					<div class="col">
+						<h3>Panto</h3>
+						<p class="text-break">The Advantage of hiring a workspace with us is that gives you comfortable services and all-round facilities </p>
+					</div>
+				</div>
+			</div>
+			<div class="col pb-5">
+				<div class="row row-cols-1">
+					<div class="col text-warning"><p>Services</p></div>
+					<div class="col"><p>Email Marketing</p></div>
+					<div class="col"><p>Campaigns</p></div>
+					<div class="col"><p>Branding</p></div>
+				</div>
+			</div>
+			<div class="col pb-5">
+				<div class="row row-cols-1">
+					<div class="col text-warning"><p>Furniture</p></div>
+					<div class="col"><p>Beds</p></div>
+					<div class="col"><p>Chair</p></div>
+					<div class="col"><p>All</p></div>
+				</div>
+			</div>
+			<div class="col pb-5">
+				<div class="row row-cols-2">
+					<div class="col text-warning"><p>Follow Us</p></div>
+					<div class="col"></div>
+					<div class="col col-2">
+						<img src="assets/icon/06-footer-facebook.png" class="img-fluid">
+					</div>
+					<div class="col col-10">
+						<p>Facebook</p>
+					</div>
+					<div class="col col-2">
+						<img src="assets/icon/06-footer-twitter.png" class="img-fluid position-absolute">
+					</div>
+					<div class="col col-10">
+						<p>Twitter</p>
+					</div>
+					<div class="col col-2">
+						<img src="assets/icon/06-footer-instagram.png" class="img-fluid position-absolute">
+					</div>
+					<div class="col col-10">
+						<p>Instagram</p>
+					</div>
+				</div>
+			</div>
+			<div class="col col-sm-1"></div>
+		</div>
+		<div class="row row-cols-1 ms-1 me-1">
+			<div class="col">
+				<a href="#" class="nav-link"><p class="text-dark">Terms & Condition</p></a>
+			</div>
+			<div class="col">
+				<a href="#" class="nav-link"><p class="text-dark">Privacy Policy</p></a>
+			</div>
+			<div class="col mt-3">
+				<p>Copyright © 2022</p>
+			</div>
 		</div>
 	</div>
 
